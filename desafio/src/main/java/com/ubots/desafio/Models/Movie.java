@@ -13,9 +13,10 @@ public class Movie {
     private Long id;
     private String title;
     private String description;
+    private int rating;
     private boolean reviewed;
 
-    // Getters and Setters
+
     public Long getId() {
         return id;
     }
@@ -47,4 +48,12 @@ public class Movie {
     public void setReviewed(boolean reviewed) {
         this.reviewed = reviewed;
     }
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
 }
