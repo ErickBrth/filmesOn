@@ -67,7 +67,7 @@ public class MovieService {
         movieRepository.save(movie);
     }
 
-    private MovieDTO convertToDTO(Movie movie) {
+    public MovieDTO convertToDTO(Movie movie) {
         MovieDTO movieDTO = new MovieDTO();
         movieDTO.setId(movie.getId());
         movieDTO.setTitle(movie.getTitle());
@@ -77,7 +77,7 @@ public class MovieService {
         return movieDTO;
     }
 
-    private Movie convertToEntity(MovieDTO movieDTO) {
+    protected Movie convertToEntity(MovieDTO movieDTO) {
         Movie movie = new Movie();
         movie.setId(movieDTO.getId());
         movie.setTitle(movieDTO.getTitle());
